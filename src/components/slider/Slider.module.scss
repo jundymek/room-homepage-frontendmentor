@@ -1,0 +1,38 @@
+.slider {
+  background: url("../../images/desktop-image-hero-1.jpg");
+  background-size: cover;
+  width: 60%;
+  height: 570px;
+  color: hsl(0, 0%, 100%);
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  margin: 50px 0 0 70px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navListItem {
+  padding: 0 18px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
