@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 60px;
+}
+
+.paragraph {
+  font-size: 14px;
+  color: hsl(0, 0%, 63%);
+}

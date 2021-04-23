@@ -1,4 +1,19 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  background: hsl(0, 0%, 100%);
+}
+
 .top-wrapper {
   display: flex;
-  width: 100vw;
 }
