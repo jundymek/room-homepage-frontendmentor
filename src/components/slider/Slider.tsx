@@ -1,7 +1,12 @@
 import React from "react";
+import { useWindowWidth } from "../../customHooks/useWindowWidth";
+import Arrows from "../arrows/Arrows";
 import styles from "./Slider.module.scss";
 
 const Slider = () => {
+  const windowWidth = useWindowWidth();
+  console.log(windowWidth);
+  const areArrowsVisible = windowWidth <= 1000;
   return (
     <section className={styles.slider}>
       <div className={styles.navWrapper}>
@@ -15,6 +20,7 @@ const Slider = () => {
           </ul>
         </nav>
       </div>
+      {areArrowsVisible && <Arrows />}
     </section>
   );
 };

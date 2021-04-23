@@ -1,3 +1,6 @@
+
+@import "../../styles/variables.scss";
+
 .discover {
   width: 40%;
   height: 570px;
@@ -9,6 +12,7 @@
   position: relative;
   @media (max-width: 1000px) {
     width: 100%;
+    padding: 40px;
   }
 }
 
@@ -20,7 +24,7 @@
 }
 
 .paragraph {
-  color: hsl(0, 0%, 63%);
+  color: $darkGray;
   line-height: 24px;
   font-size: 0.9rem;
 }

@@ -1,3 +1,5 @@
+@import "../../styles/variables.scss";
+
 .arrows {
   position: absolute;
   left: 0;
@@ -7,6 +9,10 @@
   background: black;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1000px) {
+    left: unset;
+    right: 0;
+  }
 }
 
 .button {

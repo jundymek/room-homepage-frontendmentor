@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Discover.module.scss";
 import Arrows from "../arrows/Arrows";
+import { useWindowWidth } from "../../customHooks/useWindowWidth";
 
 const Discover = () => {
+  const windowWidth = useWindowWidth();
+  const areArrowsVisible = windowWidth > 1000;
   return (
     <div className={styles.discover}>
       <h2 className={styles.title}>Discover innovative ways to decorate</h2>
@@ -14,7 +17,7 @@ const Discover = () => {
       <a href="/#" className={styles.link}>
         Shop now
       </a>
-      <Arrows />
+      {areArrowsVisible && <Arrows />}
     </div>
   );
 };
