@@ -4,6 +4,11 @@
   width: 60%;
   height: 570px;
   color: hsl(0, 0%, 100%);
+  @media (max-width: 1000px) {
+    width: 100%;
+    background: url("../../images/mobile-image-hero-1.jpg");
+    background-size: cover;
+  }
 }
 
 .navWrapper {

@@ -7,6 +7,9 @@
   padding: 100px;
   box-sizing: border-box;
   position: relative;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .title {
@@ -37,24 +40,4 @@
     top: 0;
     right: -100px;
   }
-}
-
-.arrows {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 24%;
-  height: 84px;
-  background: black;
-  display: flex;
-  justify-content: space-between;
-}
-
-.button {
-  margin: 0;
-  padding: 0;
-  background: none;
-  border: 0;
-  width: 50%;
-  cursor: pointer;
 }

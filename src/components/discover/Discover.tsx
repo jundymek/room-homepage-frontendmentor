@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Discover.module.scss";
-import arrowLeft from "../../images/icon-angle-left.svg";
-import arrowRight from "../../images/icon-angle-right.svg";
+import Arrows from "../arrows/Arrows";
 
 const Discover = () => {
   return (
@@ -15,14 +14,7 @@ const Discover = () => {
       <a href="/#" className={styles.link}>
         Shop now
       </a>
-      <div className={styles.arrows}>
-        <button className={styles.button}>
-          <img src={arrowLeft} alt="" />
-        </button>
-        <button className={styles.button}>
-          <img src={arrowRight} alt="" />
-        </button>
-      </div>
+      <Arrows />
     </div>
   );
 };
