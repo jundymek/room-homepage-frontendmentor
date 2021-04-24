@@ -4,6 +4,7 @@
   background: url("../../images/desktop-image-hero-1.jpg");
   background-size: cover;
   width: 60%;
+  max-width: 894px;
   height: 570px;
   color: $white;
   position: relative;
@@ -29,6 +30,7 @@
 .navList {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }

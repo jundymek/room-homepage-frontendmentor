@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -12,8 +13,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1535px;
   background: $white;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 .top-wrapper {
