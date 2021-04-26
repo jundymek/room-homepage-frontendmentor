@@ -17,11 +17,11 @@
 }
 
 .hamburger {
-  position: fixed;
+  position: absolute;
   margin: 0;
   padding: 0;
-  top: 54px;
-  left: 20px;
+  top: 58px;
+  left: 40px;
   background: none;
   border: none;
   cursor: pointer;
@@ -34,9 +34,19 @@
   display: flex;
   align-items: center;
   margin: 50px 0 0 70px;
+  // background: white;
   @media (max-width: $desktop) {
     justify-content: center;
+    // margin: 0;
+    // height: 150px;
   }
+}
+
+.navWrapperMobileOpen {
+  background: white;
+  margin: 0;
+  height: 150px;
+  color: black;
 }
 
 .nav {
@@ -44,7 +54,7 @@
   justify-content: center;
   align-items: center;
   @media (max-width: $desktop) {
-    display: none;
+    margin-bottom: 4px;
   }
 }
 
@@ -65,8 +75,11 @@
 .title {
   margin: 0;
   padding: 0;
-  font-weight: 500;
   @media (max-width: $desktop) {
     transform: translateX(-50%);
   }
+}
+
+.hide {
+  display: none;
 }
