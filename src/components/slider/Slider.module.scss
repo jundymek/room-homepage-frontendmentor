@@ -8,10 +8,25 @@
   height: 570px;
   color: $white;
   position: relative;
-  @media (max-width: 1000px) {
+  @media (max-width: $desktop) {
     width: 100%;
+    max-width: unset;
     background: url("../../images/mobile-image-hero-1.jpg");
     background-size: cover;
+  }
+}
+
+.hamburger {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 54px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  @media (min-width: $desktop) {
+    display: none;
   }
 }
 
@@ -19,12 +34,18 @@
   display: flex;
   align-items: center;
   margin: 50px 0 0 70px;
+  @media (max-width: $desktop) {
+    justify-content: center;
+  }
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: $desktop) {
+    display: none;
+  }
 }
 
 .navList {
@@ -45,4 +66,7 @@
   margin: 0;
   padding: 0;
   font-weight: 500;
+  @media (max-width: $desktop) {
+    transform: translateX(-50%);
+  }
 }

@@ -3,6 +3,7 @@ import { useWindowWidth } from "../../customHooks/useWindowWidth";
 import Arrows from "../arrows/Arrows";
 import styles from "./Slider.module.scss";
 import logo from "../../images/logo.svg";
+import hamburger from "../../images/icon-hamburger.svg";
 
 const Slider = () => {
   const windowWidth = useWindowWidth();
@@ -11,6 +12,9 @@ const Slider = () => {
   return (
     <section className={styles.slider}>
       <div className={styles.navWrapper}>
+        <button className={styles.hamburger}>
+          <img src={hamburger} alt="" width="30" height="20" />
+        </button>
         <h1 className={styles.title}>
           <img src={logo} alt="Room logo" />
         </h1>
