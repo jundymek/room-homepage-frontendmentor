@@ -5,10 +5,7 @@ import arrowRight from "../../images/icon-angle-right.svg";
 import { useSliderImage } from "../../context/slidersContext";
 
 const Arrows = () => {
-  const { dispatch } = useSliderImage();
-  const handleChangeSlide = (direction: "left" | "right") => {
-    dispatch({ type: direction });
-  };
+  const { handleChangeSlide } = useSliderImage();
 
   return (
     <div className={styles.arrows}>

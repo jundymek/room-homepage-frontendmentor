@@ -1,35 +1,31 @@
 import * as React from "react";
 
-type Action = { type: "left" } | { type: "right" };
-type Dispatch = (action: Action) => void;
-type State = { position: number };
+type ChangeSlideType = (direction: "left" | "right") => void;
 type SliderProviderProps = { children: React.ReactNode };
 
-const SliderStateContext = React.createContext<{ state: State; dispatch: Dispatch } | undefined>(undefined);
-
-function sliderReducer(state: State, action: Action) {
-  switch (action.type) {
-    case "right": {
-      if (state.position < 3) {
-        return { position: state.position + 1 };
-      } else return { position: 1 };
-    }
-    case "left": {
-      if (state.position >= 2) {
-        return { position: state.position - 1 };
-      } else return { position: 3 };
-    }
-    default: {
-      throw new Error(`Unhandled action type`);
-    }
-  }
-}
+const SliderStateContext = React.createContext<{ slideNr: number; handleChangeSlide: ChangeSlideType } | undefined>(
+  undefined
+);
 
 function SliderProvider({ children }: SliderProviderProps) {
-  const [state, dispatch] = React.useReducer(sliderReducer, {
-    position: 1,
-  });
-  const value = { state, dispatch };
+  const [slideNr, setslideNr] = React.useState(1);
+
+  function handleChangeSlide(direction: "left" | "right") {
+    switch (direction) {
+      case "right": {
+        if (slideNr < 3) {
+          return setslideNr(slideNr + 1);
+        } else return setslideNr(1);
+      }
+      case "left": {
+        if (slideNr >= 2) {
+          return setslideNr(slideNr - 1);
+        } else return setslideNr(3);
+      }
+    }
+  }
+
+  const value = { slideNr, handleChangeSlide };
   return <SliderStateContext.Provider value={value}>{children}</SliderStateContext.Provider>;
 }
 

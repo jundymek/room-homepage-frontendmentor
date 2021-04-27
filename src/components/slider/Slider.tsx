@@ -13,13 +13,13 @@ const Slider = () => {
   const windowWidth = useWindowWidth();
   const areArrowsVisible = windowWidth <= 1000;
 
-  const { state } = useSliderImage();
+  const { slideNr } = useSliderImage();
 
   const handleToggleMenuOpen = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const sliderStyle = clsx(`${styles.slider}`, styles[`bg${state.position}`]);
+  const sliderStyle = clsx(`${styles.slider}`, styles[`bg${slideNr}`]);
   const navStyles = clsx(`${styles.nav}`, !isMobileMenuOpen && windowWidth < 1000 && `${styles.hide}`);
   const titleStyles = clsx(`${styles.title}`, isMobileMenuOpen && windowWidth < 1000 && `${styles.hide}`);
   const menuWrapperSyles = clsx(
