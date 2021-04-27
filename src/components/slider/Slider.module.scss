@@ -1,18 +1,36 @@
 @import "../../styles/variables.scss";
 
 .slider {
-  background: url("../../images/desktop-image-hero-1.jpg");
   background-size: cover;
   width: 60%;
   max-width: 894px;
   height: 570px;
   color: $white;
   position: relative;
+  transition: background-image 0.5s ease-in-out;
   @media (max-width: $desktop) {
     width: 100%;
     max-width: unset;
-    background: url("../../images/mobile-image-hero-1.jpg");
     background-size: cover;
+  }
+}
+
+.bg1 {
+  background-image: url("../../images/desktop-image-hero-1.jpg");
+  @media (max-width: $desktop) {
+    background-image: url("../../images/mobile-image-hero-1.jpg");
+  }
+}
+.bg2 {
+  background-image: url("../../images/desktop-image-hero-2.jpg");
+  @media (max-width: $desktop) {
+    background-image: url("../../images/mobile-image-hero-2.jpg");
+  }
+}
+.bg3 {
+  background-image: url("../../images/desktop-image-hero-3.jpg");
+  @media (max-width: $desktop) {
+    background-image: url("../../images/mobile-image-hero-3.jpg");
   }
 }
 
@@ -34,11 +52,8 @@
   display: flex;
   align-items: center;
   margin: 50px 0 0 70px;
-  // background: white;
   @media (max-width: $desktop) {
     justify-content: center;
-    // margin: 0;
-    // height: 150px;
   }
 }
 
@@ -46,15 +61,18 @@
   background: white;
   margin: 0;
   height: 150px;
-  color: black;
+  color: $black;
+  justify-content: flex-end;
 }
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
   @media (max-width: $desktop) {
     margin-bottom: 4px;
+    margin-right: 20px;
   }
 }
 
@@ -69,7 +87,10 @@
 .navListItem {
   padding: 0 18px;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
+  @media (max-width: $desktop) {
+    padding: 0 12px;
+  }
 }
 
 .title {

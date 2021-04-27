@@ -6,17 +6,20 @@ import logo from "../../images/logo.svg";
 import hamburger from "../../images/icon-hamburger.svg";
 import iconClose from "../../images/icon-close.svg";
 import clsx from "clsx";
+import { useSliderImage } from "../../context/slidersContext";
 
 const Slider = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const windowWidth = useWindowWidth();
   const areArrowsVisible = windowWidth <= 1000;
 
+  const { state } = useSliderImage();
+
   const handleToggleMenuOpen = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    console.log(isMobileMenuOpen);
   };
 
+  const sliderStyle = clsx(`${styles.slider}`, styles[`bg${state.position}`]);
   const navStyles = clsx(`${styles.nav}`, !isMobileMenuOpen && windowWidth < 1000 && `${styles.hide}`);
   const titleStyles = clsx(`${styles.title}`, isMobileMenuOpen && windowWidth < 1000 && `${styles.hide}`);
   const menuWrapperSyles = clsx(
@@ -24,7 +27,7 @@ const Slider = () => {
     isMobileMenuOpen && windowWidth < 1000 && `${styles.navWrapperMobileOpen}`
   );
   return (
-    <section className={styles.slider}>
+    <section className={sliderStyle}>
       <div className={menuWrapperSyles}>
         <button className={styles.hamburger} onClick={handleToggleMenuOpen}>
           {!isMobileMenuOpen ? (
