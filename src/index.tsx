@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { MobileMenuProvider } from "./context/mobileMenuContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MobileMenuProvider>
+      <App />
+    </MobileMenuProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

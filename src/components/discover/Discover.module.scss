@@ -2,29 +2,27 @@
 
 .discover {
   width: 40%;
-  height: 570px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 100px 100px 150px 100px;
   position: relative;
   box-sizing: border-box;
   @media (max-width: $desktop) {
     width: 100%;
     max-width: 100vw;
-    height: 570px;
-    padding: 30px;
+    padding: 60px 30px 60px 30px;
   }
 }
 
 .title {
-  color: #000;
+  color: $black;
   font-size: 38px;
   font-weight: 600;
-  margin: 0 0 20px 0;
+  margin: 0 0 0px 0;
   @media (max-width: $desktop) {
-    font-size: 32px;
+    font-size: 26px;
   }
 }
 
@@ -43,6 +41,7 @@
   font-size: 0.9rem;
   color: $black;
   position: relative;
+  align-self: flex-start;
   &::after {
     position: absolute;
     content: url("../../images/icon-arrow.svg");
@@ -51,5 +50,6 @@
   }
   @media (max-width: $desktop) {
     align-self: flex-start;
+    font-size: 0.7rem;
   }
 }

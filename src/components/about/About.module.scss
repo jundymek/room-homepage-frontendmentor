@@ -18,6 +18,19 @@
 }
 
 .paragraph {
-  font-size: 14px;
+  line-height: 20px;
+  font-size: 0.8rem;
   color: hsl(0, 0%, 63%);
+}
+
+.title {
+  color: $black;
+  font-size: 18px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  @media (max-width: $desktop) {
+    font-size: 12px;
+  }
 }

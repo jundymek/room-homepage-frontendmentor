@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useWindowWidth } from "../../customHooks/useWindowWidth";
 import Arrows from "../arrows/Arrows";
 import styles from "./Slider.module.scss";
@@ -7,11 +7,13 @@ import hamburger from "../../images/icon-hamburger.svg";
 import iconClose from "../../images/icon-close.svg";
 import clsx from "clsx";
 import { useSliderImage } from "../../context/slidersContext";
+import { useMobileMenu } from "../../context/mobileMenuContext";
 
 const Slider = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const windowWidth = useWindowWidth();
   const areArrowsVisible = windowWidth <= 1000;
+
+  const { isMobileMenuOpen, setIsMobileMenuOpen } = useMobileMenu();
 
   const { slideNr } = useSliderImage();
 

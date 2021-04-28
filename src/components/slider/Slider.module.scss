@@ -64,6 +64,10 @@
   transition: opacity 2s;
   color: $black;
   justify-content: flex-end;
+  filter: unset;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav {
