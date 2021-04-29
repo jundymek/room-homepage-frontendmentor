@@ -37,16 +37,26 @@
   width: fit-content;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.6rem;
-  font-size: 0.9rem;
+  letter-spacing: 10px;
+  font-size: 14px;
   color: $black;
   position: relative;
   align-self: flex-start;
   &::after {
     position: absolute;
-    content: url("../../images/icon-arrow.svg");
+    content: "";
+    width: 40px;
+    height: 12px;
+    background-color: $black;
+    mask-image: url("../../images/icon-arrow.svg");
     top: 0;
-    right: -100px;
+    right: -80px;
+  }
+  &:hover {
+    color: $darkGray;
+  }
+  &:hover::after {
+    background-color: $darkGray;
   }
   @media (max-width: $desktop) {
     align-self: flex-start;
