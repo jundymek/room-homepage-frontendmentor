@@ -1,0 +1,62 @@
+@import "../../styles/variables.scss";
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  @media (max-width: $desktop) {
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navListItem {
+  padding: 0 18px;
+  font-size: 12px;
+  font-weight: 600;
+  @media (max-width: $desktop) {
+    padding: 0 12px;
+  }
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  @media (max-width: $desktop) {
+    transform: translateX(-50%);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    max-width: 0;
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $white;
+    transition: max-width 0.4s;
+  }
+  &:hover::before {
+    max-width: 20px;
+  }
+}

@@ -8,6 +8,7 @@ import iconClose from "../../images/icon-close.svg";
 import clsx from "clsx";
 import { useSliderImage } from "../../context/slidersContext";
 import { useMobileMenu } from "../../context/mobileMenuContext";
+import Navigation from "../navigation/Navigation";
 
 const Slider = () => {
   const windowWidth = useWindowWidth();
@@ -22,7 +23,6 @@ const Slider = () => {
   };
 
   const sliderStyle = clsx(`${styles.slider}`, styles[`bg${slideNr}`]);
-  const navStyles = clsx(`${styles.nav}`, !isMobileMenuOpen && windowWidth < 1000 && `${styles.hide}`);
   const titleStyles = clsx(`${styles.title}`, isMobileMenuOpen && windowWidth < 1000 && `${styles.hide}`);
   const menuWrapperSyles = clsx(
     `${styles.navWrapper}`,
@@ -41,14 +41,7 @@ const Slider = () => {
         <h1 className={titleStyles}>
           <img src={logo} alt="Room logo" width="62" height="14" />
         </h1>
-        <nav className={navStyles}>
-          <ul className={styles.navList}>
-            <li className={styles.navListItem}>home</li>
-            <li className={styles.navListItem}>shop</li>
-            <li className={styles.navListItem}>about</li>
-            <li className={styles.navListItem}>contact</li>
-          </ul>
-        </nav>
+        <Navigation />
       </div>
       {areArrowsVisible && <Arrows />}
     </section>
