@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./About.module.scss";
-import darkImage from "../../images/image-about-dark.jpg";
-import lightImage from "../../images/image-about-light.jpg";
 
 const About = () => {
   return (

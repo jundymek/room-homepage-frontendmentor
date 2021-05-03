@@ -14,35 +14,37 @@
 
 .pictureDark {
   width: 100%;
-  min-width: 420px;
+  max-width: 420px;
   height: 100%;
   background-image: url("../../images/image-about-dark.jpg");
   background-size: cover;
   @media (max-width: $desktop) {
     width: 100%;
-    min-width: unset;
+    max-width: unset;
     height: 190px;
   }
 }
 .pictureLight {
   width: 100%;
-  min-width: 420px;
+  max-width: 440px;
   height: 100%;
   background-image: url("../../images/image-about-light.jpg");
   background-size: cover;
   @media (max-width: $desktop) {
     width: 100%;
-    min-width: unset;
+    max-width: unset;
     height: 190px;
   }
 }
 
 .about {
+  width: 100%;
   display: flex;
-  max-width: 580px;
+  box-sizing: border-box;
   flex-direction: column;
-  padding: 60px 40px;
+  padding: 60px 38px;
   @media (max-width: 1000px) {
+    max-width: 100%;
     padding: 40px 20px;
   }
 }
