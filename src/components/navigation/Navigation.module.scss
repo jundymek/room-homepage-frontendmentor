@@ -44,6 +44,11 @@ a {
   text-decoration: none;
   color: $white;
   position: relative;
+  @media (max-width: $desktop) {
+    color: $veryDarkGray;
+    font-weight: 800;
+    font-size: 12px;
+  }
   &::before {
     position: absolute;
     content: "";

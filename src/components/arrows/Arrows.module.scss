@@ -9,10 +9,16 @@
   background: black;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 1000px) {
+  @media (max-width: $desktop) {
     left: unset;
     right: 0;
+    width: 100px;
+    height: 54px;
   }
+}
+
+.arrow {
+  width: 10px;
 }
 
 .button {
