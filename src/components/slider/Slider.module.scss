@@ -2,9 +2,9 @@
 
 .slider {
   background-size: cover;
-  width: 60%;
+  width: 100%;
   max-width: 894px;
-  height: 570px;
+  min-height: 570px;
   color: $white;
   position: relative;
   transition: background-image 0.5s ease-in-out;

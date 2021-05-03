@@ -6,7 +6,7 @@ import lightImage from "../../images/image-about-light.jpg";
 const About = () => {
   return (
     <div className={styles.wrapper}>
-      <img src={darkImage} alt="" />
+      <div className={styles.pictureDark}></div>
       <div className={styles.about}>
         <h3 className={styles.title}>About our furniture</h3>
         <p className={styles.paragraph}>
@@ -16,7 +16,7 @@ const About = () => {
           available to help you create your dream space.
         </p>
       </div>
-      <img src={lightImage} alt="" />
+      <div className={styles.pictureLight}></div>
     </div>
   );
 };
