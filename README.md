@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/jundymek/room-homepage-frontendmentor](https://github.com/jundymek/room-homepage-frontendmentor)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://jundymek.github.io/room-homepage-frontendmentor/](https://jundymek.github.io/room-homepage-frontendmentor/)
 
 ### Built with 🚀
 
