@@ -14,10 +14,10 @@ const Arrows = () => {
   return (
     <div className={styles.arrows}>
       <button className={styles.button} onClick={() => handleChangeSlide("left")}>
-        <img src={arrowLeft} alt="" className="arrow" width={arrowWidth} height={arrowHeight} />
+        <img src={arrowLeft} alt="Arrow left" width={arrowWidth} height={arrowHeight} title="Arrow left" />
       </button>
-      <button className={styles.button} onClick={() => handleChangeSlide("right")}>
-        <img src={arrowRight} alt="" width={arrowWidth} height={arrowHeight} />
+      <button className={styles.button} onClick={() => handleChangeSlide("right")} title="Arrow right">
+        <img src={arrowRight} alt="Arrow right" width={arrowWidth} height={arrowHeight} />
       </button>
     </div>
   );

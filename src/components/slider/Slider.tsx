@@ -31,11 +31,11 @@ const Slider = () => {
   return (
     <section className={sliderStyle}>
       <div className={menuWrapperSyles}>
-        <button className={styles.hamburger} onClick={handleToggleMenuOpen}>
+        <button className={styles.hamburger} onClick={handleToggleMenuOpen} title="Hamburger">
           {!isMobileMenuOpen ? (
-            <img src={hamburger} alt="" width="24" height="14" />
+            <img src={hamburger} alt="Hamburger icon" width="24" height="14" />
           ) : (
-            <img src={iconClose} alt="" width="24" height="24" />
+            <img src={iconClose} alt="Close icon" width="24" height="24" />
           )}
         </button>
         <h1 className={titleStyles}>
