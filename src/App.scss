@@ -1,9 +1,6 @@
 @import "./styles/variables.scss";
 
 .app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   min-height: 100vh;
 }
@@ -13,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   max-width: 1440px;
   background: $white;
   @media (max-width: 1000px) {
