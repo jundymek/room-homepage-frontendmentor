@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/room-homepage-frontendmentor/static/css/main.c262e2de.chunk.css",
+    "main.js": "/room-homepage-frontendmentor/static/js/main.8875e4d6.chunk.js",
+    "main.js.map": "/room-homepage-frontendmentor/static/js/main.8875e4d6.chunk.js.map",
+    "runtime-main.js": "/room-homepage-frontendmentor/static/js/runtime-main.8e28e4e2.js",
+    "runtime-main.js.map": "/room-homepage-frontendmentor/static/js/runtime-main.8e28e4e2.js.map",
+    "static/js/2.48bcf5c2.chunk.js": "/room-homepage-frontendmentor/static/js/2.48bcf5c2.chunk.js",
+    "static/js/2.48bcf5c2.chunk.js.map": "/room-homepage-frontendmentor/static/js/2.48bcf5c2.chunk.js.map",
+    "static/js/3.62f20ab2.chunk.js": "/room-homepage-frontendmentor/static/js/3.62f20ab2.chunk.js",
+    "static/js/3.62f20ab2.chunk.js.map": "/room-homepage-frontendmentor/static/js/3.62f20ab2.chunk.js.map",
+    "index.html": "/room-homepage-frontendmentor/index.html",
+    "static/css/main.c262e2de.chunk.css.map": "/room-homepage-frontendmentor/static/css/main.c262e2de.chunk.css.map",
+    "static/js/2.48bcf5c2.chunk.js.LICENSE.txt": "/room-homepage-frontendmentor/static/js/2.48bcf5c2.chunk.js.LICENSE.txt",
+    "static/media/Slider.module.scss": "/room-homepage-frontendmentor/static/media/mobile-image-hero-3.601d0f37.jpg",
+    "static/media/icon-angle-left.d53877df.svg": "/room-homepage-frontendmentor/static/media/icon-angle-left.d53877df.svg",
+    "static/media/icon-angle-right.0ed3f81f.svg": "/room-homepage-frontendmentor/static/media/icon-angle-right.0ed3f81f.svg",
+    "static/media/Discover.module.scss": "/room-homepage-frontendmentor/static/media/icon-arrow.84087786.svg",
+    "static/media/icon-close.3e88bd6e.svg": "/room-homepage-frontendmentor/static/media/icon-close.3e88bd6e.svg",
+    "static/media/icon-hamburger.dc022bac.svg": "/room-homepage-frontendmentor/static/media/icon-hamburger.dc022bac.svg",
+    "static/media/About.module.scss": "/room-homepage-frontendmentor/static/media/image-about-dark.329bbc44.jpg",
+    "static/media/logo.8fad0542.svg": "/room-homepage-frontendmentor/static/media/logo.8fad0542.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e28e4e2.js",
+    "static/js/2.48bcf5c2.chunk.js",
+    "static/css/main.c262e2de.chunk.css",
+    "static/js/main.8875e4d6.chunk.js"
+  ]
+}
